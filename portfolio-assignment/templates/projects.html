@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      .project-card {
+        margin-bottom: 30px;
+      }
+      .project-card .card-body {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .project-card .card-body:hover {
+        transform: translateY(-5px);
+      }
+      .project-card .card-title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .project-card .card-text {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Tuhin Dhar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('aboutme')}}">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('projects')}}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('education')}}">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('skills')}}">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('trips')}}">Trips</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <!-- Content of your webpage goes here -->
+      <h1 class="text-center mb-5">My Projects</h1>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">E-commerce Website</h2>
+                <p class="card-text">
+                  A full-fledged e-commerce platform built using the MERN stack.
+                </p>
+                <p class="card-text">Features:</p>
+                <ul class="card-text">
+                  <li>Product listing and details</li>
+                  <li>Shopping cart</li>
+                  <li>User authentication</li>
+                  <li>Payment integration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Task Manager Application</h2>
+                <p class="card-text">
+                  A task manager application built with the MERN stack.
+                </p>
+                <p class="card-text">Features:</p>
+                <ul class="card-text">
+                  <li>Create, update, and delete tasks</li>
+                  <li>Assign tasks to users</li>
+                  <li>Filter tasks based on status</li>
+                  <li>Authentication and authorization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="project-card">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Social Media Platform</h2>
+                <p class="card-text">
+                  A social media platform built using the MERN stack.
+                </p>
+                <p class="card-text">Features:</p>
+                <ul class="card-text">
+                  <li>User profiles and posts</li>
+                  <li>Follow and unfollow users</li>
+                  <li>Like and comment on posts</li>
+                  <li>Real-time notifications</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
